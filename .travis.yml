@@ -30,5 +30,5 @@ script:
   - docker buildx create --use --name mybuilder
   - docker buildx ls
   - docker buildx build -t xiaodi93/rpi-php:latest --build-arg PHP_VERSION=7.3 --build-arg PHP_SWOOLE=4.4.7 --build-arg PHP_REDIS=true --build-arg PHP_MEMCACHED=true --build-arg PHP_PDO_SQLSRV=true --platform=linux/arm64 . --push
-  - docker buildx build -t xiaodi93/rpi-php:7.2 --build-arg PHP_VERSION=7.2 --build-arg PHP_SWOOLE=4.4.7 --build-arg PHP_REDIS=true --build-arg PHP_MEMCACHED=true --build-arg PHP_PDO_SQLSRV=true --platform=linux/arm64 . --push
-  - docker buildx build -t xiaodi93/rpi-php:7.1 --build-arg PHP_VERSION=7.1 --build-arg PHP_SWOOLE=4.4.7 --build-arg PHP_REDIS=true --build-arg PHP_MEMCACHED=true --build-arg PHP_PDO_SQLSRV=true --platform=linux/arm64 . --push
+  # - docker buildx build -t xiaodi93/rpi-php:7.2 --build-arg PHP_VERSION=7.2 --build-arg PHP_SWOOLE=4.4.7 --build-arg PHP_REDIS=true --build-arg PHP_MEMCACHED=true --build-arg PHP_PDO_SQLSRV=true --platform=linux/arm64 . --push
+  # - docker buildx build -t xiaodi93/rpi-php:7.1 --build-arg PHP_VERSION=7.1 --build-arg PHP_SWOOLE=4.4.7 --build-arg PHP_REDIS=true --build-arg PHP_MEMCACHED=true --build-arg PHP_PDO_SQLSRV=true --platform=linux/arm64 . --push
